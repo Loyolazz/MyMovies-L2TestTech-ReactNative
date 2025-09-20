@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "MyMovies",
+    "slug": "my-movies",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#d81b60"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "permissions": [
+        "READ_CALENDAR",
+        "WRITE_CALENDAR"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "plugins": [
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Permitir que o MyMovies adicione eventos na sua agenda.",
+          "remindersPermission": "Permitir que o MyMovies crie lembretes de filmes."
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
